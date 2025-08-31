@@ -1,8 +1,6 @@
 BINARY_NAME=celeritasApp
 
 build:
-	@go mod vendor
-	@go get
 	@echo "Building Celeritas..."
 	@go build -o tmp/${BINARY_NAME} .
 	@echo "Celeritas built!"
@@ -17,12 +15,6 @@ clean:
 	@go clean
 	@rm tmp/${BINARY_NAME}
 	@echo "Cleaned!"
-
-start_compose:
-	docker-compose up -d
-
-stop_compose:
-	docker-compose down
 
 test:
 	@echo "Testing..."
