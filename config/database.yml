@@ -1,9 +1,9 @@
 ---
 development:
-  dialect: postgres
-  database: celeritas
-  user: postgres
-  password: password
-  host: 127.0.0.1
-  port: 15432
+  dialect: 
+  database:
+  user:
+  password: 
+  host:
+  port:
   pool: 5
